@@ -135,6 +135,9 @@ function displayConnections(winArray){
             case "Golden State Warriors":
                             list.classList.add("warriors");
                             break;
+            case "Minneapolis Lakers":
+                                list.classList.add("warriors");
+                                break;
             case "Houston Rockets":
                             list.classList.add("rockets");
                             break;
@@ -153,6 +156,9 @@ function displayConnections(winArray){
             case "Minnesota Timberwolves":
                             list.classList.add("timberwolves");
                             break;
+            case "New Jersey Nets":
+                                list.classList.add("timberwolves");
+                                break;
             case "Brooklyn Nets":
                             list.classList.add("nets");
                             break;
@@ -192,7 +198,13 @@ function displayConnections(winArray){
             case "Memphis Grizzlies":
                             list.classList.add("grizzlies");
                             break;
+            case "Vancouver Grizzlies":
+                                list.classList.add("grizzlies");
+                                break;
             case "Washington Wizards":
+                            list.classList.add("wizards");
+                            break;
+            case "Washington Bullets":
                             list.classList.add("wizards");
                             break;
             case "Detroit Pistons":
@@ -206,6 +218,9 @@ function displayConnections(winArray){
                                 break;
             case "Seattle Supersonics":
                             list.classList.add("sonics");
+                            break;
+            case "Charlotte Bobcats":
+                            list.classList.add("bobcats");
                             break;
 
             default:
