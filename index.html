@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="css_reset.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="team_colors.css">
+    <script src="https://kit.fontawesome.com/f3fb556982.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">  
+    <title>Six Degrees of Dwayne Bacon</title>
+    <script type="application/javascript" src="./seedteams.js"></script>
+    <script type="application/javascript" src="./seedplayers.js"></script>
+    <script type="application/javascript" src="./nbasearch.js"></script>
+
+
+
+    <meta property="og:title" content="Six Degrees of Dwayne Bacon" />
+    <!-- <meta property="og:image" content="./assets/images/meta/screenshot.png" />
+    <meta
+      property="og:description"
+      content="An interactive record of movie character kill counts.
+      (JavaScript, HTML5, CSS3, Canvas)
+      
+      Built an interactive visualization of movie character kill counts using purely Javascript, HTML, and CSS.
+      
+      Designed mini-game logic and animation using HTML Canvas."
+    />
+    <meta
+      property="og:url"
+      content="https://ginoreyes.me/killcount"
+    /> -->
+</head>
+
+<input text id="playerInput1"></input>
+<input text id="playerInput2"></input>
+
+    <button onClick={getPath()}>test</button>
+    <ul id="connections-list">
+
+    </ul>
+
+
+    <div class="footer">
+        <a href="https://github.com/grmreyes/">
+            <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/grmreyes/">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="mailto:grmreyes@gmail.com">
+            <i class="far fa-envelope"></i>
+        </a>
+    </div>
+
+    <script type="application/javascript" src="./autocomplete.js"></script>
+
+</body>
+</html>
