@@ -8,6 +8,14 @@ function toTitleCase(str) {
   }
 
 
+  function scrollPage() {
+    var div = document.querySelector(".page");
+    $(div).animate({
+       scrollTop: div.scrollHeight - div.clientHeight
+    }, 1500);
+ }
+
+
 function getPath(player1,player2) {
     
 
@@ -104,7 +112,6 @@ function getPath(player1,player2) {
 }
 
 function displayConnections(winArray){
-    console.log(winArray)
     document.getElementById("connections-list").innerHTML = "";
     for(let i=0;i<winArray.length-1;i+=2){
         let teamname = winArray[i+1].slice(8)
@@ -222,9 +229,13 @@ function displayConnections(winArray){
             case "Charlotte Bobcats":
                             list.classList.add("bobcats");
                             break;
+            case "Philadelphia Warriors":
+                                list.classList.add("knicks");
+                                break;
 
             default:
-                break;
+                                list.classList.add("default");
+                                break;
         }
 
 
@@ -232,11 +243,11 @@ function displayConnections(winArray){
 
 
  
-        let player1 = document.createElement("span"); 
-        let team = document.createElement("span"); 
-        let player2 = document.createElement("span");
+        let player1 = document.createElement("div"); 
+        let team = document.createElement("div"); 
+        let player2 = document.createElement("div");
         player1.innerHTML = winArray[i];  
-        team.innerHTML = winArray[i+1]; 
+        team.innerHTML = `${winArray[i+1].slice(0,8)}<br>${teamname}`; 
         player2.innerHTML = winArray[i+2];    
         list.appendChild(player1);   
         list.appendChild(team);   
@@ -247,4 +258,5 @@ function displayConnections(winArray){
                                    
         document.getElementById("connections-list").appendChild(list);
     }
+    setTimeout(scrollPage,10)
 }

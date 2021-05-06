@@ -2,13 +2,17 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="css_reset.css">
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="footer.css">
-    <link rel="stylesheet" href="team_colors.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="assets/stylesheets/css_reset.css">
+    <link rel="stylesheet" href="assets/stylesheets/main.css">
+    <link rel="stylesheet" href="assets/stylesheets/footer.css">
+    <link rel="stylesheet" href="assets/stylesheets/team_colors.css">
+    <link rel="stylesheet" href="assets/stylesheets/animation.css">
     <script src="https://kit.fontawesome.com/f3fb556982.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">  
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <title>Six Degrees of Dwayne Bacon</title>
     <script type="application/javascript" src="./seedteams.js"></script>
     <script type="application/javascript" src="./seedplayers.js"></script>
@@ -33,13 +37,35 @@
     /> -->
 </head>
 
-<input text id="playerInput1"></input>
-<input text id="playerInput2"></input>
+<body>
 
-    <button onClick={getPath()}>test</button>
-    <ul id="connections-list">
+    <div class="page disable-scrollbars">
 
-    </ul>
+        <div class="container">
+
+
+            <div class="inputs"> 
+                    <input text id="playerInput1"></input> 
+                    <input text id="playerInput2"></input>         
+                <button onClick={getPath()}>test</button>
+            </div>
+    
+            <ul id="connections-list">
+    
+            </ul>
+    
+    
+    
+        </div>
+
+
+
+
+    </div>
+
+
+
+
 
 
     <div class="footer">

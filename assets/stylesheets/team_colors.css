@@ -1,0 +1,100 @@
+.hawks div{color: white;
+    background-color: #E03A3E;
+    border: 3px solid black}
+.celtics div{color: white;
+    background-color: #007A33;
+    border: 3px solid #BA9653;}
+.cavaliers div{color: white;
+    background-color: #860038;
+    border: 3px solid #FDBB30;}
+.pelicans div{color: white;
+    background-color: #0C2340;
+    border: 3px solid #C8102E;}
+.bulls div{color: white;
+    background-color: #CE1141;
+    border: 3px solid black;}
+.mavericks div{color: white;
+    background-color: #00538C;
+    border: 3px solid #002B5E;}
+.nuggets div{color: white;
+    background-color: #0E2240;
+    border: 3px solid #FEC524;}
+.warriors div{color: white;
+    background-color: #1D428A;
+    border: 3px solid #FFC72C;}
+.rockets div{color: white;
+    background-color: #CE1141;
+    border: 3px solid #C4CED4;}
+.clippers div{color: white;
+    background-color: #1D428A;
+    border: 3px solid #C8102E;}
+.lakers div{color: white;
+    background-color: #552583;
+    border: 3px solid #FDB927;}
+.heat div{color: white;
+    background-color: #98002E;
+    border: 3px solid #000000;}
+.bucks div{color: white;
+    background-color: #00471B;
+    border: 3px solid #EEE1C6;}
+.timberwolves div{color: white;
+    background-color: #0C2340;
+    border: 3px solid #9EA2A2;}
+.nets div{color: #FFFFFF;
+    background-color: #000000;
+    border: 3px solid #000000;}
+.knicks div{color: white;
+    background-color: #006BB6;
+    border: 3px solid #F58426;}
+.magic div{color: white;
+    background-color: #0077C0;
+    border: 3px solid #C4CED4;}
+.pacers div{color: white;
+    background-color: #FDBB30;
+    border: 3px solid #002D62;}
+.sixers div{color: white;
+    background-color: #006BB6;
+    border: 3px solid #ED174C;}
+.suns div{color: white;
+    background-color: #E56020;
+    border: 3px solid #000000;}
+.blazers div{color: white;
+    background-color: #E03A3E;
+    border: 3px solid #000000;}
+.kings div{color: white;
+    background-color: #5A2D81;
+    border: 3px solid #63727A;}
+.spurs div{color: white;
+    background-color: #000000;
+    border: 3px solid #C4CED4;}
+.thunder div{color: white;
+    background-color: #007AC1;
+    border: 3px solid #EF3B24;}
+.raptors div{color: white;
+    background-color: #CE1141;
+    border: 3px solid #000000;}
+.jazz div{color: white;
+    background-color: #002B5C;
+    border: 3px solid #F9A01B;}
+.grizzlies div{color: white;
+    background-color: #5D76A9;
+    border: 3px solid #12173F;}
+.wizards div{color: white;
+    background-color: #002B5C;
+    border: 3px solid #E31837;}
+.pistons div{color: white;
+    background-color: #1D42BA;
+    border: 3px solid #C8102E;}
+.hornets div{color: white;
+    background-color: #1D1160;
+    border: 3px solid #00788C;}
+.sonics div{color: white;
+    background-color: #00653A;
+    border: 3px solid #FFC200;}
+.bobcats div{color: white;
+        background-color: #EF3B24;
+        border: 3px solid #63727A;}
+.default div{color: #ffffff;
+            background-color: #3b3b3b;
+            border: 3px solid #FFC200;}
+                    
