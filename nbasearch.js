@@ -16,8 +16,9 @@ function toTitleCase(str) {
  }
 
 
-function getPath(player1,player2) {
+function getPath() {
     
+    document.querySelector(".instructions").classList.add("hidden")
 
     var startPlayer = toTitleCase(document.getElementById("playerInput1").value)
     var endPlayer = toTitleCase(document.getElementById("playerInput2").value)
