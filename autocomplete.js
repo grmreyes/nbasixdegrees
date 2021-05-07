@@ -11,7 +11,7 @@ function autocomplete(inp, arr) {
 
         a = document.createElement("DIV");
         a.setAttribute("id", this.id + "autocomplete-list");
-        a.setAttribute("class", "autocomplete-items");
+        a.setAttribute("class", "autocomplete-items disable-scrollbars");
 
         this.parentNode.appendChild(a);
 

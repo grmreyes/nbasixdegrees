@@ -38,18 +38,22 @@
 </head>
 
 <body>
-
+    <h1 class ="title">6 DEGREES</h1>
+    <!-- <h2 class = "subtitle">of Kevin <strong>Bacon</strong>Durant</h2> -->
     <div class="page disable-scrollbars">
 
         <div class="container">
 
 
             <div class="inputs"> 
-                    <input text id="playerInput1"></input> 
-                    <input text id="playerInput2"></input>         
-                <button onClick={getPath()}>test</button>
+                    <div class="input1">
+                        <input text id="playerInput1" placeholder="First Player"></input>
+                    </div>
+                    <div class="input2">
+                        <input text id="playerInput2" placeholder="Second Player"></input>         
+                    </div>
             </div>
-    
+            <button class = "connect-button" onClick={getPath()}>Connect</button>
             <ul id="connections-list">
     
             </ul>

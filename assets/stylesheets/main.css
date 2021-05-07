@@ -1,19 +1,60 @@
-body{
-    background-color: rgb(39, 39, 39);
+@font-face {
+    font-family: 'basketballregular';
+    src: url('basketball-webfont.woff2') format('woff2'),
+         url('basketball-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
+.title{
+    font-family: 'basketballregular', sans-serif;
+    font-size: 18vh;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    height: 17vh;
+    background-color: #ee6630;
+    border-bottom: 3vh solid black;
+}
+
+.subtitle{
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    font-size: 4vh;
+    left: 70vw;
+    top: 12vh;
+    font-weight: 700;
+}
+
+.subtitle strong{
+    text-decoration: line-through;
+}
+body{
+    background-color: rgb(39, 39, 39);
+    background-image: url("../images/background.jpg");
+    font-family: 'Roboto', sans-serif;
+
+    
+}
 .page{
     position: absolute;
     left: 50%;
     top: 20%;
     transform: translateX(-50%);
     width: 90%;
-    border-radius: 5px;
-    background-color: white;
+    /* background-color: rgb(253, 192, 80); */
+    background-color: rgba(255, 255, 255, 0.322);
     height: 70vh;
     max-width: 900px;
-    overflow-y: scroll
+    overflow-y: scroll;
+    border-radius: 0 0 10vh 10vh;
+    border: 2vh solid black;
+    border-top: none;
+
+    /* border: 6px solid black; */
 }
+
 
 
 .container{
@@ -42,6 +83,7 @@ body{
     font-weight: 700;
     font-size: 1em;
     padding: 1em;
+    /* box-shadow: 0 10px 0 rgb(0 0 0 / 20%); */
 
 }
 
@@ -71,3 +113,113 @@ body{
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none;  /* IE 10+ */
 }
+
+
+
+
+/*     inputs      */
+
+.inputs{
+    display: flex;
+
+}
+
+@media only screen and (max-width: 770px) {
+    .inputs{
+        display: block;
+    }
+  }
+
+.inputs input{
+    border: 2px solid #1d1d1d;
+    display: block;
+    width: 16em;
+    height: 40px;
+    padding: 0 20px;
+    border-radius: 20px;
+    background: 0 0;
+    background-color: rgba(255, 255, 255, 0.438);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    text-align: center;
+}
+
+.input1{
+    position: relative;
+}
+
+.input2{
+    position: relative;
+}
+
+.inputs input:focus{
+    outline: none;
+    border-color: black;
+}
+
+.autocomplete-items{
+    position: absolute;
+    max-height: 15em;
+    width: 18em;
+    left: 0.3em;
+    overflow-y: scroll;
+    background: rgba(255, 255, 255, 0.747);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    border-radius: 5px;
+    z-index: 3;
+    padding-bottom: 5px;
+}
+
+.autocomplete-items div:hover{
+    background: tomato;
+    cursor: pointer;
+}
+
+.autocomplete-active{
+    background-color: tomato;
+}
+
+
+.autocomplete-list{
+    background-color: red;
+}
+
+
+
+
+
+
+.connect-button{
+    box-sizing: border-box;
+    appearance: none;
+    background-color: transparent;
+    border: 3px solid #000000;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    display: flex;
+    align-self: center;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1;
+    margin-top: 10px;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #000000;
+    background-image: linear-gradient(45deg,#e68a65c9 50%, #ee6730 50%);
+    background-position: 100%;
+    background-size: 400%;
+    transition: all 300ms ease-in-out; 
+}
+
+.connect-button:hover{
+    background-position: 0;
+}
+  
+
+
+
