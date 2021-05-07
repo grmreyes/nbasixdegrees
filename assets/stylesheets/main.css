@@ -16,6 +16,7 @@
     height: 17vh;
     background-color: #ee6630;
     border-bottom: 3vh solid black;
+    z-index: 3;
 }
 
 .title{
