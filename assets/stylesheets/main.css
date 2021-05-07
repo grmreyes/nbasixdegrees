@@ -202,7 +202,11 @@ body{
     font-size: 1em;
     border-radius: 5px;
     z-index: 3;
-    padding-bottom: 5px;
+}
+
+.autocomplete-items div{
+    padding: 1em;
+    border: 1px solid gray;
 }
 
 .autocomplete-items div:hover{
