@@ -5,6 +5,9 @@ function toTitleCase(str) {
         if(txt.toUpperCase()===txt){
             return txt;
         }
+        else if(txt==="iv"||txt==="Iv"){
+            return "IV"
+        }
         else if(txt==="iii"||txt==="Iii"){
             return "III"
         }
