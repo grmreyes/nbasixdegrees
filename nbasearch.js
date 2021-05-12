@@ -2,7 +2,21 @@ function toTitleCase(str) {
     return str.replace(
       /\w*/g,
       function(txt) {
-        return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+        if(txt.toUpperCase()===txt){
+            return txt;
+        }
+        else if(txt==="iii"||txt==="Iii"){
+            return "III"
+        }
+        else if(txt==="ii"||txt==="Ii"){
+            return "II"
+        } 
+        else if(txt==="Jj"||txt==="jj"){
+            return "JJ"
+        }
+        else{
+            return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+        }
       }
     );
   }
@@ -21,8 +35,7 @@ function getPath() {
     document.querySelector(".instructions").classList.add("hidden")
 
     var startPlayer = toTitleCase(document.getElementById("playerInput1").value)
-    var endPlayer = toTitleCase(document.getElementById("playerInput2").value)
-
+    var endPlayer = toTitleCase(document.getElementById("playerInput2").value)gi
 
     if(!players[startPlayer]||!players[endPlayer]){
         document.getElementById("connections-list").innerHTML = "Player Not Found";
