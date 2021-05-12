@@ -35,7 +35,7 @@ function getPath() {
     document.querySelector(".instructions").classList.add("hidden")
 
     var startPlayer = toTitleCase(document.getElementById("playerInput1").value)
-    var endPlayer = toTitleCase(document.getElementById("playerInput2").value)gi
+    var endPlayer = toTitleCase(document.getElementById("playerInput2").value)
 
     if(!players[startPlayer]||!players[endPlayer]){
         document.getElementById("connections-list").innerHTML = "Player Not Found";
