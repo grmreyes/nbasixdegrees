@@ -33,7 +33,7 @@ var newPlayers = [
     "John Collins",
     "Tyrese Haliburton",
     "Tyler Herro",
-    "Kristaps Porziņgis",
+    "Kristaps Porzingis",
     "Jaren Jackson Jr.",
 
 
