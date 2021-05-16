@@ -55,7 +55,7 @@ function getPath() {
 
 
     while(winArray.length<1){
-        //console.log(counter)
+
 
     //queue up teams
 
@@ -70,10 +70,8 @@ function getPath() {
             queueObject = [team,nextPlayers[0][1].concat(team)]
 
             seenTeams.push(team)
-            // console.log(seenTeams)
             nextTeams.push(queueObject)
-            // console.log(seenTeams)
-            // console.log(nextTeams)
+
             
         })
         nextPlayers.shift();
@@ -95,8 +93,6 @@ function getPath() {
             }
             seenPlayers.push(player)
             nextPlayers.push(queueObject)
-            // console.log(seenTeams)
-            // console.log(nextTeams)
             
         })
         nextTeams.shift();
@@ -112,20 +108,7 @@ function getPath() {
     
     
     displayConnections(winArray);
-    // while (queue.length) {      
-    //   let curr = queue.shift()
-    //   res.push(curr.key)
-      
-    //   if (curr.right){
-    //     queue.push(curr.right)
-    //   }
-      
-    //   if (curr.left){
-    //     queue.push(curr.left)
-    //   }
-    // }
-    
-    // return res
+
 }
 
 function displayConnections(winArray){
