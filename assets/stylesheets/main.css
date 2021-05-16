@@ -157,12 +157,31 @@ body{
     justify-content: center;
 }
 
+#random1hidden{
+    display: none;
+    cursor: pointer;
+}
+
+#random1{
+    cursor: pointer;
+}
+
+.random2{
+    cursor: pointer;
+}
+
 @media only screen and (max-width: 770px) {
     .inputs{
         display: block;
     }
     .inputs input{
         margin-top:5px;
+    }
+    #random1hidden{
+        display: block;
+    }
+    #random1{
+        display:none;
     }
   }
 
@@ -183,10 +202,14 @@ body{
 
 .input1{
     position: relative;
+    display:flex;
+    align-items: center;
 }
 
 .input2{
     position: relative;
+    display:flex;
+    align-items: center;
 }
 
 .inputs input:focus{

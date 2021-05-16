@@ -55,3 +55,14 @@ var oldPlayers = [
     "Rick Barry",
     "Bill Russell"
 ]
+
+
+function randomOld(){
+    var player = oldPlayers[Math.floor(Math.random()*oldPlayers.length)]
+    document.querySelector("#playerInput2").value = player
+}
+
+function randomNew(){
+    var player = newPlayers[Math.floor(Math.random()*newPlayers.length)]
+    document.querySelector("#playerInput1").value = player
+}

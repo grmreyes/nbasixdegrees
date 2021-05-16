@@ -17,7 +17,7 @@
     <script type="application/javascript" src="./seedteams.js"></script>
     <script type="application/javascript" src="./seedplayers.js"></script>
     <script type="application/javascript" src="./nbasearch.js"></script>
-
+    <script type="application/javascript" src="./random.js"></script>
 
 
     <meta property="og:title" content="Six Degrees of Kevin Durant" />
@@ -61,10 +61,10 @@
 
             <div class="inputs"> 
                     <div class="input1">
-                        <input text id="playerInput1" placeholder="First Player"></input>
+                        <i class="fas fa-random" id="random1" onClick={randomNew()}></i><input text id="playerInput1" placeholder="First Player"></input><i class="fas fa-random" id="random1hidden" onClick={randomNew()}></i>
                     </div>
                     <div class="input2">
-                        <input text id="playerInput2" placeholder="Second Player"></input>         
+                        <input text id="playerInput2" placeholder="Second Player"></input> <i class="fas fa-random random2" onClick={randomOld()}></i>        
                     </div>
             </div>
             <button class = "connect-button" onClick={getPath()}>Connect</button>
