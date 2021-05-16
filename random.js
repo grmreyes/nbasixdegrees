@@ -29,7 +29,14 @@ var newPlayers = [
     "Karl-Anthony Towns",
     "Domantas Sabonis",
     "Lonzo Ball",
-    "Anthony Edwards"
+    "Anthony Edwards",
+    "John Collins",
+    "Tyrese Haliburton",
+    "Tyler Herro",
+    "Kristaps Porziņgis",
+    "Jaren Jackson Jr.",
+
+
     ]
     
     var oldPlayers = ["Larry Bird",
@@ -53,7 +60,17 @@ var newPlayers = [
     "Isiah Thomas",
     "John Havlicek",
     "Rick Barry",
-    "Bill Russell"
+    "Bill Russell",
+    "George Mikan",
+    "Pete Maravich",
+    "Walt Frazier",
+    "Jerry West",
+    "Bill Walton",
+    "Hakeem Olajuwon",
+    "David Robinson",
+    "Michael Jordan",
+    "Chris Mullin",
+    "Scottie Pippen"
     ]
     
     

@@ -1,3 +1,6 @@
+
+
+//Upper case formatting
 function toTitleCase(str) {
     return str.replace(
       /\w*/g,
@@ -24,7 +27,7 @@ function toTitleCase(str) {
     );
   }
 
-
+  //auto scroll page
   function scrollPage() {
     var div = document.querySelector(".page");
     $(div).animate({
@@ -32,7 +35,7 @@ function toTitleCase(str) {
     }, 1500);
  }
 
-
+//get shortesr path to 2nd player
 function getPath() {
     
     document.querySelector(".instructions").classList.add("hidden")
@@ -57,58 +60,49 @@ function getPath() {
     while(winArray.length<1){
 
 
-    //queue up teams
+        //queue up teams
 
-    if(nextPlayers[0]){
-        players[nextPlayers[0][0]].forEach(team =>{
+        if(nextPlayers[0]){
+            players[nextPlayers[0][0]].forEach(team =>{
 
-            if(seenTeams.includes(team)){
-                return;
-            }
-
-
-            queueObject = [team,nextPlayers[0][1].concat(team)]
-
-            seenTeams.push(team)
-            nextTeams.push(queueObject)
-
-            
-        })
-        nextPlayers.shift();
-    }
-
-    //queue up players
-    if(nextTeams[0]){
-        teams[nextTeams[0][0]].forEach(player =>{
-
-            if(seenPlayers.includes(player)){
-                return;
-            }
-            
-            
-            queueObject = [player,nextTeams[0][1].concat(player)]
-
-            if(player===endPlayer){
-                winArray = queueObject[1]
-            }
-            seenPlayers.push(player)
-            nextPlayers.push(queueObject)
-            
-        })
-        nextTeams.shift();
-    }
+                if(seenTeams.includes(team)){
+                    return;
+                }
 
 
+                queueObject = [team,nextPlayers[0][1].concat(team)]
 
+                seenTeams.push(team)
+                nextTeams.push(queueObject)
 
+                
+            })
+            nextPlayers.shift();
+        }
 
+        //queue up players
+        if(nextTeams[0]){
+            teams[nextTeams[0][0]].forEach(player =>{
 
+                if(seenPlayers.includes(player)){
+                    return;
+                }
+                
+                
+                queueObject = [player,nextTeams[0][1].concat(player)]
+
+                if(player===endPlayer){
+                    winArray = queueObject[1]
+                }
+                seenPlayers.push(player)
+                nextPlayers.push(queueObject)
+                
+            })
+            nextTeams.shift();
+        }
 
     }
-    
-    
     displayConnections(winArray);
-
 }
 
 function displayConnections(winArray){
@@ -117,6 +111,7 @@ function displayConnections(winArray){
         let teamname = winArray[i+1].slice(8)
 
         let list = document.createElement("li");  
+        //add css colors by team name
         switch(teamname){
             case "Atlanta Hawks":
                             list.classList.add("hawks");
@@ -237,21 +232,19 @@ function displayConnections(winArray){
                                 list.classList.add("default");
                                 break;
         }
-
-
-
-
-
  
         let player1 = document.createElement("div"); 
         let team = document.createElement("div"); 
         let player2 = document.createElement("div");
+
         player1.innerHTML = winArray[i];  
         team.innerHTML = `${winArray[i+1].slice(0,8)}<br>${teamname}`; 
-        player2.innerHTML = winArray[i+2];    
+        player2.innerHTML = winArray[i+2];  
+
         list.appendChild(player1);   
         list.appendChild(team);   
         list.appendChild(player2);
+        
         let delayClass = "delay"+i
         list.classList.add(delayClass)
         list.classList.add("fadeInLeft");
