@@ -61,13 +61,13 @@
 
             <div class="inputs"> 
                     <div class="input1">
-                        <i class="fas fa-random" id="random1" onClick={randomNew()}></i><input text id="playerInput1" placeholder="First Player"></input><i class="fas fa-random" id="random1hidden" onClick={randomNew()}></i>
+                        <i class="fas fa-random" id="random1" onclick="randomNew()"></i><input text id="playerInput1" placeholder="First Player"></input><i class="fas fa-random" id="random1hidden" onclick="randomNew()"></i>
                     </div>
                     <div class="input2">
-                        <input text id="playerInput2" placeholder="Second Player"></input> <i class="fas fa-random random2" onClick={randomOld()}></i>        
+                        <input text id="playerInput2" placeholder="Second Player"></input> <i class="fas fa-random random2" onclick="randomOld()"></i>        
                     </div>
             </div>
-            <button class = "connect-button" onClick={getPath()}>Connect</button>
+            <button class = "connect-button" onclick="getPath()">Connect</button>
             <ul id="connections-list">
     
             </ul>
