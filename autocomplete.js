@@ -28,6 +28,7 @@ function autocomplete(inp, arr) {
 
                 b.addEventListener("click", function(e) {
 
+                  // console.log(this.getElementsByTagName("input")[0].value)
                 inp.value = this.getElementsByTagName("input")[0].value;
 
                 closeAllLists();
@@ -92,6 +93,8 @@ function autocomplete(inp, arr) {
 
 
   let playerArray = Object.keys(players)
+
+  // console.log(playerArray)
 
   autocomplete(document.getElementById("playerInput1"), playerArray);
   autocomplete(document.getElementById("playerInput2"), playerArray);

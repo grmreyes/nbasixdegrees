@@ -1,5 +1,3 @@
-
-
 //Upper case formatting
 function toTitleCase(str) {
     return str.replace(
