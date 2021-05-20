@@ -26,7 +26,12 @@
 
 
 @media only screen and (max-width: 500px) {
-    .footer{
+    .footer i{
         display:none;
     }
   }
+
+.coffee{
+    height: 40px;
+    width: auto;
+}
