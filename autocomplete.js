@@ -13,7 +13,7 @@ function autocomplete(inp, arr) {
         a.setAttribute("id", this.id + "autocomplete-list");
         a.setAttribute("class", "autocomplete-items disable-scrollbars");
 
-        this.parentNode.appendChild(a);
+        this.parentNode.parentNode.appendChild(a);
 
         for (i = 0; i < arr.length; i++) {
 

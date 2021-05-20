@@ -158,15 +158,18 @@ body{
 }
 
 #random1hidden{
+    position: relative;
     display: none;
     cursor: pointer;
 }
 
 #random1{
+    position: relative;
     cursor: pointer;
 }
 
 .random2{
+    position: relative;
     cursor: pointer;
 }
 
@@ -202,13 +205,15 @@ body{
 
 .input1{
     position: relative;
-    display:flex;
-    align-items: center;
 }
 
 .input2{
-    position: relative;
+    position: relative; 
+}
+
+.inputrandom{
     display:flex;
+    justify-content: center;
     align-items: center;
 }
 
