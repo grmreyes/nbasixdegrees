@@ -32,6 +32,9 @@
   }
 
 .coffee{
-    height: 40px;
+    height: 30px;
+    padding: 4px;
     width: auto;
+    border: black solid 2px;
+    border-radius: 5px;
 }
