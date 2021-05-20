@@ -38,6 +38,10 @@
     .footer i{
         display:none;
     }
+
+    .page{
+        height: 60vh;
+    }
   }
 
 
