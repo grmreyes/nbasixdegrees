@@ -25,12 +25,6 @@
 }
 
 
-@media only screen and (max-width: 500px) {
-    .footer i{
-        display:none;
-    }
-  }
-
 .coffee{
     height: 30px;
     padding: 4px;
@@ -38,3 +32,12 @@
     border: black solid 2px;
     border-radius: 5px;
 }
+
+
+@media only screen and (max-width: 500px) {
+    .footer i{
+        display:none;
+    }
+  }
+
+
