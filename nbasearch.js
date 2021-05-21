@@ -4,7 +4,7 @@ function toTitleCase(str) {
       /\w*/g,
       function(txt) {
         if(txt.length<3){
-            if(!["JA","MO","AL","BO","KY","SI","TY"].includes(txt.toUpperCase())){
+            if(!["JA","MO","AL","BO","KY","SI","TY","DE"].includes(txt.toUpperCase())){
                 // console.log(txt.toUpperCase())
                 return txt.toUpperCase();
             }
@@ -57,10 +57,8 @@ function toTitleCase(str) {
 function getPath() {
     
     document.querySelector(".instructions").classList.add("hidden")
-
     var startPlayer = toTitleCase(document.getElementById("playerInput1").value)
     var endPlayer = toTitleCase(document.getElementById("playerInput2").value)
-
     if(!players[startPlayer]||!players[endPlayer]){
         document.getElementById("connections-list").innerHTML = "Player Not Found";
         return false;
