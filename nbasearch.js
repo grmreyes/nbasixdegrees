@@ -57,8 +57,8 @@ function toTitleCase(str) {
 function getPath() {
     
     document.querySelector(".instructions").classList.add("hidden")
-    var startPlayer = toTitleCase(document.getElementById("playerInput1").value)
-    var endPlayer = toTitleCase(document.getElementById("playerInput2").value)
+    var startPlayer = toTitleCase(document.getElementById("playerInput1").value).replace("JR.","Jr.")
+    var endPlayer = toTitleCase(document.getElementById("playerInput2").value).replace("JR.","Jr.")
     if(!players[startPlayer]||!players[endPlayer]){
         document.getElementById("connections-list").innerHTML = "Player Not Found";
         return false;
