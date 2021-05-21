@@ -4,7 +4,7 @@ function toTitleCase(str) {
       /\w*/g,
       function(txt) {
         if(txt.length<3){
-            if(!["JA","MO","AL","BO","KY","SI","TY","DE","SR"].includes(txt.toUpperCase())){
+            if(!["JA","MO","AL","BO","KY","SI","TY","DE","SR","EL","HA","YI"].includes(txt.toUpperCase())){
                 // console.log(txt.toUpperCase())
                 return txt.toUpperCase();
             }
