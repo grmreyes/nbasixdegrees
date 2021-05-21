@@ -19,9 +19,9 @@ function toTitleCase(str) {
         // else if(txt==="iv"||txt==="Iv"){
         //     return "IV"
         // }
-        // else if(txt==="iii"||txt==="Iii"){
-        //     return "III"
-        // }
+        else if(txt==="iii"||txt==="Iii"||txt==="III"){
+            return "III";
+        }
         // else if(txt==="ii"||txt==="Ii"){
         //     return "II"
         // } 
@@ -59,6 +59,7 @@ function getPath() {
     document.querySelector(".instructions").classList.add("hidden")
     var startPlayer = toTitleCase(document.getElementById("playerInput1").value).replace("JR.","Jr.")
     var endPlayer = toTitleCase(document.getElementById("playerInput2").value).replace("JR.","Jr.")
+    console.log(startPlayer)
     if(!players[startPlayer]||!players[endPlayer]){
         document.getElementById("connections-list").innerHTML = "Player Not Found";
         return false;
