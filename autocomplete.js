@@ -17,12 +17,15 @@ function autocomplete(inp, arr) {
 
         for (i = 0; i < arr.length; i++) {
 
-          if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
+          // if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
+          if (arr[i].toUpperCase().match(val.toUpperCase())) {
 
             b = document.createElement("DIV");
 
-            b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
-            b.innerHTML += arr[i].substr(val.length);
+            // b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
+            // b.innerHTML += arr[i].substr(val.length);
+
+            b.innerHTML = arr[i];
 
             b.innerHTML += "<input type='hidden' value=\"" + arr[i] + "\">";
 
