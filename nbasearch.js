@@ -16,27 +16,11 @@ function toTitleCase(str) {
 
 
         }
-        // else if(txt==="iv"||txt==="Iv"){
-        //     return "IV"
-        // }
+
         else if(txt==="iii"||txt==="Iii"||txt==="III"){
             return "III";
         }
-        // else if(txt==="ii"||txt==="Ii"){
-        //     return "II"
-        // } 
-        // else if(txt==="Jj"||txt==="jj"){
-        //     return "JJ"
-        // }
-        // else if(txt==="Tj"||txt==="tj"){
-        //     return "TJ"
-        // }
-        // else if(txt==="Cj"||txt==="cj"){
-        //     return "CJ"
-        // }
-        // else if(txt==="Bj"||txt==="bj"){
-        //     return "BJ"
-        // }
+
 
         else{
             return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
@@ -53,13 +37,12 @@ function toTitleCase(str) {
     }, 1500);
  }
 
-//get shortesr path to 2nd player
+//get shortest path to 2nd player
 function getPath() {
     
     document.querySelector(".instructions").classList.add("hidden")
     var startPlayer = toTitleCase(document.getElementById("playerInput1").value).replace("JR.","Jr.")
     var endPlayer = toTitleCase(document.getElementById("playerInput2").value).replace("JR.","Jr.")
-    console.log(startPlayer)
     if(!players[startPlayer]||!players[endPlayer]){
         document.getElementById("connections-list").innerHTML = "Player Not Found";
         return false;
