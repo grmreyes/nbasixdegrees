@@ -3,21 +3,41 @@ function toTitleCase(str) {
     return str.replace(
       /\w*/g,
       function(txt) {
-        if(txt.toUpperCase()===txt){
-            return txt;
+        if(txt.length<3){
+            if(!["JA","MO","AL","BO","KY","SI","TY"].includes(txt.toUpperCase())){
+                // console.log(txt.toUpperCase())
+                return txt.toUpperCase();
+            }
+            else{
+                // console.log(txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase())
+                return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+                
+            }
+
+
         }
-        else if(txt==="iv"||txt==="Iv"){
-            return "IV"
-        }
-        else if(txt==="iii"||txt==="Iii"){
-            return "III"
-        }
-        else if(txt==="ii"||txt==="Ii"){
-            return "II"
-        } 
-        else if(txt==="Jj"||txt==="jj"){
-            return "JJ"
-        }
+        // else if(txt==="iv"||txt==="Iv"){
+        //     return "IV"
+        // }
+        // else if(txt==="iii"||txt==="Iii"){
+        //     return "III"
+        // }
+        // else if(txt==="ii"||txt==="Ii"){
+        //     return "II"
+        // } 
+        // else if(txt==="Jj"||txt==="jj"){
+        //     return "JJ"
+        // }
+        // else if(txt==="Tj"||txt==="tj"){
+        //     return "TJ"
+        // }
+        // else if(txt==="Cj"||txt==="cj"){
+        //     return "CJ"
+        // }
+        // else if(txt==="Bj"||txt==="bj"){
+        //     return "BJ"
+        // }
+
         else{
             return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
         }
