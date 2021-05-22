@@ -137,13 +137,13 @@ function displayConnections(winArray){
             case "Golden State Warriors":
                             list.classList.add("warriors");
                             break;
-            case "Minneapolis Lakers":
-                                list.classList.add("warriors");
-                                break;
             case "Houston Rockets":
                             list.classList.add("rockets");
                             break;
             case "Los Angeles Clippers":
+                            list.classList.add("clippers");
+                            break;
+            case "San Diego Clippers":
                             list.classList.add("clippers");
                             break;
             case "Los Angeles Lakers":
@@ -176,6 +176,9 @@ function displayConnections(winArray){
             case "Philadelphia 76ers":
                             list.classList.add("sixers");
                             break;
+            case "Syracuse Nationals":
+                            list.classList.add("sixers");
+                            break;
             case "Phoenix Suns":
                             list.classList.add("suns");
                             break;
@@ -184,6 +187,12 @@ function displayConnections(winArray){
                             break;
             case "Sacramento Kings":
                             list.classList.add("kings");
+                            break;
+            case "Kansas City Kings":
+                            list.classList.add("pistons");
+                            break;
+            case "Cincinnati Royals":
+                            list.classList.add("pistons");
                             break;
             case "San Antonio Spurs":
                             list.classList.add("spurs");
@@ -209,6 +218,9 @@ function displayConnections(winArray){
             case "Washington Bullets":
                             list.classList.add("wizards");
                             break;
+            case "Baltimore Bullets":
+                            list.classList.add("wizards");
+                            break;
             case "Detroit Pistons":
                             list.classList.add("pistons");
                             break;
@@ -226,6 +238,15 @@ function displayConnections(winArray){
                             break;
             case "Philadelphia Warriors":
                                 list.classList.add("knicks");
+                                break;
+            case "Minneapolis Lakers":
+                                list.classList.add("minneapolis");
+                                break;
+            case "St. Louis Hawks":
+                                list.classList.add("hawks");
+                                break;
+            case "Buffalo Braves":
+                                list.classList.add("blazers");
                                 break;
 
             default:
