@@ -35,8 +35,9 @@ var newPlayers = [
     "Tyler Herro",
     "Kristaps Porzingis",
     "Jaren Jackson Jr.",
-
-
+    "Deandre Ayton",
+    "Jerami Grant",
+    "James Wiseman"
     ]
     
     var oldPlayers = ["Larry Bird",
@@ -70,7 +71,13 @@ var newPlayers = [
     "David Robinson",
     "Michael Jordan",
     "Chris Mullin",
-    "Scottie Pippen"
+    "Scottie Pippen",
+    "Elgin Baylor",
+    "Oscar Robertson",
+    "Elvin Hayes",
+    "Alex English",
+    "Willis Reed",
+    "Bob Cousy"    
     ]
     
     
