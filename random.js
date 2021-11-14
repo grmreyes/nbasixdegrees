@@ -37,7 +37,11 @@ var newPlayers = [
     "Jaren Jackson Jr.",
     "Deandre Ayton",
     "Jerami Grant",
-    "James Wiseman"
+    "James Wiseman",
+    "Cade Cunningham",
+    "Jalen Green",
+    "Evan Mobley",
+    "Scottie Barnes"
     ]
     
     var oldPlayers = ["Larry Bird",
