@@ -17,7 +17,7 @@ function toTitleCase(str) {
 
         }
 
-        else if(txt==="iii"||txt==="Iii"||txt==="III"){
+        else if(txt==="iii"||txt==="III"||txt==="III"){
             return "III";
         }
 
