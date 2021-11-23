@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
-        var host = "nbasixdegrees.com";
+        var host = "p2eboard.com";
         if ((host == window.location.host) && (window.location.protocol != "https:"))
             window.location.protocol = "https";
     </script>
@@ -67,10 +67,10 @@
                
             <div class="inputs"> 
                     <div class="input1">
-                        <div class="inputrandom"><i class="fas fa-random" id="random1" onclick="randomNew()"></i><input text id="playerInput1" placeholder="First Player"></input><i class="fas fa-random" id="random1hidden" onclick="randomNew()"></i></div>
+                        <div class="inputrandom"><i class="fas fa-random" id="random1" onclick="randomNew()"></i><input text id="playerInput1" onfocus="this.select();" onmouseup="return false" placeholder="First Player"></input><i class="fas fa-random" id="random1hidden" onclick="randomNew()"></i></div>
                     </div>
                     <div class="input2">
-                        <div class="inputrandom"><input text id="playerInput2" placeholder="Second Player"></input><i class="fas fa-random random2" onclick="randomOld()"></i></div>
+                        <div class="inputrandom"><input text id="playerInput2" onfocus="this.select();" onmouseup="return false" placeholder="Second Player"></input><i class="fas fa-random random2" onclick="randomOld()"></i></div>
                     </div>
             </div>
             <button class = "connect-button" onclick="getPath()">Connect</button>
