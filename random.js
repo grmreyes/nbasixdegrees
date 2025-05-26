@@ -29,7 +29,7 @@ var newPlayers = [
     "Shai Gilgeous-Alexander",
     "Chet Holmgren",
     "Stephen Curry",
-    "Kevin Durant",
+    "Kevin Durant"
     ]
     
     var oldPlayers = ["Larry Bird",
