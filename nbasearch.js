@@ -81,6 +81,7 @@ function getPath() {
         }
 
         //queue up players
+        console.log(nextTeams)
         if(nextTeams[0]){
             teams[nextTeams[0][0]].forEach(player =>{
 
